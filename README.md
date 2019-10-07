@@ -1,6 +1,11 @@
 # IoT Ready Kit #
 
-## Todo after hypriot install
+## Contributors
+- [Martin Neumayer](https://github.com/orgs/protolab-rosenheim/people/swifmaneum)
+- [Josef Baudisch](https://github.com/orgs/protolab-rosenheim/people/joe-baudisch)
+- [Michael List](https://github.com/orgs/protolab-rosenheim/people/Michael-List)
+
+## ToDo after hypriot install
 * Change hostname in user-data
 * sudo apt-get update
 * sudo apt-get upgrade
