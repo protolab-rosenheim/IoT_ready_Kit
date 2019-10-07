@@ -1,0 +1,47 @@
+module_1:
+  max_length: 550
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8
+
+module_2:
+  max_length: 440
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8
+
+module_3:
+  max_length: 750
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8
+
+module_4:
+  max_length: 170
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8
+
+module_5:
+  max_length: 1950
+  max_width: 610
+  max_thickness: 19
+  num_slots: 4
+
+module_6:
+  max_length: 1300
+  max_width: 610
+  max_thickness: 19
+  num_slots: 3
+
+module_7:
+  max_length: 220
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8
+
+module_8:
+  max_length: 530
+  max_width: 610
+  max_thickness: 19
+  num_slots: 8

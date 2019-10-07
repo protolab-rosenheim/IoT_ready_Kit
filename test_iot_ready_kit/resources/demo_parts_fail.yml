@@ -1,0 +1,35 @@
+# part is too long
+part_40:
+  part_number: 40
+  finished_length: 2900
+  finished_width: 300
+# next parts cannot be held:
+part_41:
+  part_number: 41
+  finished_length: 300
+  finished_width: 290
+part_42:
+  part_number: 42
+  finished_length: 280
+  finished_width: 280
+part_43:
+  part_number: 43
+  finished_length: 600
+  finished_width: 34
+part_44:
+  part_number: 44
+  finished_length: 2000
+  finished_width: 30
+part_45:
+  part_number: 45
+  finished_length: 300
+  finished_width: 34
+# next parts are too wide:
+part_46:
+  part_number: 46
+  finished_length: 611
+  finished_width: 611
+part_47:
+  part_number: 47
+  finished_length: 700
+  finished_width: 700

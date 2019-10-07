@@ -1,0 +1,18 @@
+[req]
+req_extensions = v3_req
+distinguished_name = req_distinguished_name
+
+[req_distinguished_name]
+C = DE
+ST = Bavaria
+L = Rosenheim
+O = YOURORGANISATION
+OU = YOUROU
+CN = YOURHOST.domain.de
+
+[v3_req]
+# Extensions to add to a certificate request
+basicConstraints = CA:FALSE
+keyUsage = digitalSignature, keyEncipherment
+subjectAltName = DNS:YOURHOST, DNS:YOURHOST.domain.de, IP:YOURIP
+# See: https://stackoverflow.com/questions/7580508/getting-chrome-to-accept-self-signed-localhost-certificate/42917227#42917227

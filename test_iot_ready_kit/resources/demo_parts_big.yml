@@ -1,0 +1,36 @@
+part_1:
+  part_number: 1
+  finished_length: 2000
+  finished_width: 400
+part_2:
+  part_number: 2
+  finished_length: 2000
+  finished_width: 200
+part_3:
+  part_number: 3
+  finished_length: 2000
+  finished_width: 50
+part_4:
+  part_number: 4
+  finished_length: 1600
+  finished_width: 150
+part_5:
+  part_number: 5
+  finished_length: 1000
+  finished_width: 200
+part_6:
+  part_number: 6
+  finished_length: 1000
+  finished_width: 100
+part_7:
+  part_number: 7
+  finished_length: 800
+  finished_width: 600
+part_8:
+  part_number: 8
+  finished_length: 2100
+  finished_width: 600
+part_9:
+  part_number: 9
+  finished_length: 2100
+  finished_width: 600

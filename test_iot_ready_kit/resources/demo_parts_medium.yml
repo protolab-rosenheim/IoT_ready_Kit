@@ -1,0 +1,60 @@
+part_10:
+  part_number: 10
+  finished_length: 611
+  finished_width: 610
+part_11:
+  part_number: 11
+  finished_length: 500
+  finished_width: 200
+part_12:
+  part_number: 12
+  finished_length: 700
+  finished_width: 500
+part_13:
+  part_number: 13
+  finished_length: 400
+  finished_width: 400
+part_14:
+  part_number: 14
+  finished_length: 330
+  finished_width: 200
+part_15:
+  part_number: 15
+  finished_length: 700
+  finished_width: 150
+part_16:
+  part_number: 16
+  finished_length: 699
+  finished_width: 100
+part_17:
+  part_number: 17
+  finished_length: 356
+  finished_width: 299
+part_18:
+  part_number: 18
+  finished_length: 478
+  finished_width: 399
+part_19:
+  part_number: 19
+  finished_length: 461
+  finished_width: 400
+part_20:
+  part_number: 20
+  finished_length: 461
+  finished_width: 300
+part_21:
+  part_number: 21
+  finished_length: 461
+  finished_width: 100
+part_22:
+  part_number: 22
+  finished_length: 555
+  finished_width: 555
+part_23:
+  part_number: 23
+  finished_length: 555
+  finished_width: 455
+part_24:
+  part_number: 24
+  finished_length: 555
+  finished_width: 355

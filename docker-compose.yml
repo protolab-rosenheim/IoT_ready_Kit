@@ -1,0 +1,79 @@
+version: '3'
+
+services:
+  irk_db:
+    image: postgres:10.5
+    container_name: irk_db
+    ports:
+      - "5432:${DATABASE_PORT}"
+    volumes:
+      - $VOLUME_DIR/irk_db:/var/lib/postgresql/data
+    restart: always
+    environment:
+      - POSTGRES_USER=${DATABASE_USER}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
+      - POSTGRES_DB=${DATABASE_NAME}
+
+  irk_webservice:
+    container_name: irk_webservice
+    depends_on:
+      - irk_db
+    build:
+      context: ../IoT_ready_Kit_Webservice
+#    ports:
+#      - "5000:5000"
+    volumes:
+      - $VOLUME_DIR/irk_webservice:/usr/src/app/conf
+    restart: always
+    environment:
+      - DATABASE_USER
+      - DATABASE_PASSWORD
+      - DATABASE_PORT
+      - DATABASE_HOSTNAME
+      - DATABASE_NAME
+      - DATABASE_DIALECT
+      - DEBUG_MODE
+
+  irk_nginx:
+    container_name: irk_nginx
+    image: nginx:1.15.5
+    depends_on:
+      - irk_webservice
+    ports:
+      - 5000:5000
+    restart: always
+    volumes:
+      - $VOLUME_DIR/irk_nginx:/etc/nginx/
+
+  irk:
+    container_name: irk
+    depends_on:
+      - irk_db
+    build:
+      context: ./
+    ports:
+      - "4840:4840"
+    volumes:
+      - $VOLUME_DIR/irk:/usr/src/app/conf
+    networks:
+      pub_net:
+        ipv4_address: 192.168.1.20
+      default:
+    restart: always
+    environment:
+      - DATABASE_USER
+      - DATABASE_PASSWORD
+      - DATABASE_PORT
+      - DATABASE_HOSTNAME
+      - DATABASE_NAME
+      - DATABASE_DIALECT
+      - DEBUG_MODE
+
+networks:
+ pub_net:
+   driver: macvlan
+   driver_opts:
+     parent: eth0
+   ipam:
+     config:
+       - subnet: 192.168.1.0/24

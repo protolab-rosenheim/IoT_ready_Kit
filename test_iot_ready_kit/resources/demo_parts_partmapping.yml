@@ -1,0 +1,49 @@
+part_1:
+  part_number: 1
+  finished_length: 562
+  finished_width: 1
+  finished_thickness: 19
+  part_mapping: 1
+
+part_2:
+  part_number: 2
+  finished_length: 563
+  finished_width: 330
+  finished_thickness: 19
+  part_mapping: 1
+
+part_3:
+  part_number: 3
+  finished_length: 2000
+  finished_width: 330
+  finished_thickness: 19
+  part_mapping: 1
+
+
+part_4:
+  part_number: 4
+  finished_length: 562
+  finished_width: 330
+  finished_thickness: 19
+  part_mapping: 2
+
+part_5:
+  part_number: 5
+  finished_length: 400
+  finished_width: 330
+  finished_thickness: 19
+  part_mapping: 2
+
+part_6:
+  part_number: 6
+  finished_length: 1000
+  finished_width: 330
+  finished_thickness: 19
+  part_mapping: 2
+
+part_7:
+  part_number: 7
+  finished_length: 600
+  finished_width: 150
+  finished_thickness: 19
+  part_mapping: 2
